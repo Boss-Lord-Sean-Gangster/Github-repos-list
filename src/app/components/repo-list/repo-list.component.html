@@ -1,0 +1,36 @@
+<app-search (searchEvent)="updateUsername($event)"></app-search>
+
+  <div class="repo-toggle-button">
+    <label for="perPageSelect">Repositories per page:</label>
+    <select id="perPageSelect" (change)="onPerPageChange($event)">
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+  <div *ngIf="userDetails && userDetails.avatar_url " class="user-details">
+      <img [src]="userDetails.avatar_url" alt="User Avatar" width="100" height="100">
+      <div>
+    <h2 class="real-name">{{ userDetails.name }}</h2>
+    <p class="username">{{ username }}</p>
+</div>
+  </div>
+  
+  <div *ngIf="repos.length" class="repo-container">
+    <h2>Repositories for {{ username }}:</h2>
+    <ul class="repo-list">
+      <li *ngFor="let repo of repos">
+        <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+        <p class="description">{{ repo.description }}</p>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!repos.length">
+    <p>No repositories found for {{ username }}.</p>
+  </div>
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }}</span>
+    <button (click)="nextPage()">Next</button>
+  </div>
+  

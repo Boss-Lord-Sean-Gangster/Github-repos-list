@@ -1,0 +1,106 @@
+body{
+    color: #00ADB5;
+}
+.repo-toggle-button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        font-weight: 100;
+        text-align: center;
+    }
+.repo-toggle-button select {
+        margin-left: 1em;
+        width: 150px;
+        height:40px ;
+        color: #ADBBDA;
+        border: 2px solid#EDE8F5;
+    }
+
+
+
+
+.repo-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+
+}
+.repo-list li{
+    background-color: #7091E6;
+    padding: 1em;
+    width: 350px;
+    border-radius: 5px;
+    
+}
+.repo-list li a {
+ text-decoration: none;
+ color: #EDE8F5;
+ font-size: 1.5em;   
+}
+.repo-list li:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.description{
+    font-size: 1em;
+    color: #ADBBDA;
+}
+.user-details{
+display: flex;
+margin-top: 2em;
+gap: 2em;
+background-color: #7091E6;
+padding-left: 2em;
+align-items: center;
+width: 35em;
+height: 15em;
+margin-bottom: 3em;
+flex-wrap:wrap ;
+border-radius: 5px;
+
+}
+.user-details img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user-details img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+
+}
+/* .user-details img:active{
+    transform: scale(10);
+    translate: 10px 10px;
+} */
+.real-name{
+    color: #EDE8F5;
+}
+.username{
+    font-size: 1.25em;
+    color: #ADBBDA;
+}
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .pagination button {
+    margin: 0 10px;
+    padding: 10px 30px;
+    background-color: #7091E6;
+    color: #EDE8F5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

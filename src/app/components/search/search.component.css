@@ -1,0 +1,18 @@
+.search-bar input{
+ width: 250px;
+ height: 50px;
+ text-align:center;
+ border: 2px solid #ADBBDA;
+ color: #ADBBDA;
+}
+
+.search-bar button{
+    height: 50px;
+    width: 100px;
+    margin-left: 2em;
+    background-color: #ADBBDA;
+    border-radius: 5px;
+    border: 2px solid #EDE8F5;
+    cursor: pointer;
+    color: #EDE8F5;
+}
